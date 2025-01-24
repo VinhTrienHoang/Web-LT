@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人日程/進捗報告サイト</title>
+    <style>
+        .TopArea{
+            width:100%;
+            height:200px;
+            background:blue;
+            align-content: center;
+        }
+        .panel{
+            display:flex;
+            flex-direction:row;
+            width:100%;
+            height:600px;
+            justify-content:space-around;
+            border: 2px solid black;
+            background-color: rgb(114, 64, 114);
+        }
+        .LargeTitle{
+            text-align: center;
+            border:2px solid black;
+            width:15%;
+            margin:20px 20px;
+            background-color: aqua;
+            transform: all 0.5s;
+        }
+        .LargeTitle:hover{
+            transform:scale(1.1);
+            box-shadow:0px 5px 5px 5px gray;
+        }
+        .English{
+            color:gray;
+            font-size:12px;
+        }
+        .BottomArea{
+            width:100%;
+            height:200px;
+            background:blue;
+        }
+        h2{
+            text-align:center;
+            color:white;
+        }
+        .time{
+            color:white;
+            text-align: center;
+            font-size:30px;
+        }
+        a{
+            border:2px solid white;
+            background-color: aquamarine;
+            padding:12px;
+            text-decoration: none;
+        }
+        a:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="TopArea">
+        <h2>黄 永展 個人日程/進捗報告サイト</h2>
+    </div>
+    <div class="panel">
+        <div class="LargeTitle">
+            <h3>個人日程</h3>
+            <p class="English">Personal Schedule</p>
+            <a href="PersonalSchedule.html" target="_blank">ClickHere</a>
+        </div>
+        <div class="LargeTitle">
+            <h3>やっていること</h3>
+            <p class="English">What I'm doing</p>
+        </div>
+        <div class="LargeTitle">
+            <h3>調整中</h3>
+            <p class="English">Under Construction</p>
+        </div>
+        <div class="LargeTitle">
+            <h3>調整中</h3>
+            <p class="English">Under Construction</p>
+        </div>
+    </div>
+    <div class="BottomArea">
+        <p class="time">Last Update Time: 24/01/2025</p>
+    </div>
+</body>
+</html>
