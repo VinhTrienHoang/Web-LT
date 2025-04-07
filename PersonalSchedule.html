@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalSchedule</title>
+    <style>
+        body{
+            display:flex;
+            flex-direction: column-reverse;
+        }
+        table{
+            width:80%;
+            margin:20px 0px;
+        }
+        th{
+            width:100px;
+            background-color: gray;
+        }
+        td{
+            width:150px;
+        }
+        table,td,th{
+            border:2px solid black;
+            border-collapse: collapse;
+            text-align:center;
+        }
+        .Hlight{
+            position:sticky;
+            top:0px;
+            width:100%;
+            height:50px;
+            background-color:rgb(21, 21, 75);
+            
+        }
+        h2{
+            color:rgb(248, 248, 248);
+        }
+        .Bottom{
+            background:linear-gradient(blue,purple);
+            position:fixed;
+            bottom:0px;
+            right:0px;
+        }
+        .UpdateTime{
+            font-size:20px;
+            color:white;
+            font-weight:300px;
+
+        }
+        .Holiday{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<!--最後の更新時間を入力してください-->
+    <div class="Bottom">
+        <p class="UpdateTime">Last Update Time:04/04/2025<p>
+    </div>
+    <div class="25.1.19-25.1.25">
+        <div class="Hlight">
+            <h2>25.1.19-25.1.25</h2>
+        </div>
+        
+        <div>
+            <table>
+                <tr>
+                    <th>日付</th>
+                    <td>1.19日</td>
+                    <td>1.20月</td>
+                    <td>1.21火</td>
+                    <td>1.22水</td>
+                    <td>1.23木</td>
+                    <td>1.24金</td>
+                    <td>1.25土</td>
+                </tr>
+                <tr>
+                    <th>在学時間</th>
+                    <td></td>
+                    <td></td>
+                    <td>10:00-16:00</td>
+                    <td><p>11:00-15:30</p><p>18:00-20:30</p></td>
+                    <td><p>13:00-15:40</p><p>17:00-20:20</p></td>
+                    <td><p>9:00-15:30</p><p>19:00-21:30</p></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>研究室・学校事務</th>
+                    <td></td>
+                    <td></td>
+                    <td><p>10:30-12:00</p><p>パターン認識特論III</p><p>14:40-16:00</p><p>進路指導ガイダンス</p></td>
+                    <td></td>
+                    <td></td>
+                    <td><p>実験参加（鈴木颯）</p></td>
+                </tr>
+                <tr>
+                    <th>研究・数理</th>
+                    <td><p>・ウェブサイト設計（HTML,CSS）練習</p></td>
+                    <td><p>・ウェブサイト設計（HTML,CSS）練習</p></td>
+                    <td><p>・ウェブサイト設計（HTML,CSS）練習</p></td>
+                    <td><p>・ウェブサイト設計（HTML,CSS）練習</p></td>
+                    <td><p>・ウェブサイト設計（HTML,CSS）練習</p><p>・論文よみ/整理</p></td>
+                    <td><p>・ウェブサイト設計（HTML,CSS）練習</p><p>・論文よみ/整理</p><p>・個人日程進捗報告サイト作り</p></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>語学</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>英単語IELTS</td>
+                    <td>英単語IELTS</td>
+                    <td>英単語IELTS</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>その他の行程</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>休み</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="25.1.26-25.2.1">
+        <div class="Hlight">
+            <h2>25.1.26-25.2.1</h2>
+        </div>
+        
+        <div>
+            <table>
+                <tr>
+                    <th>日付</th>
+                    <td>1.26日</td>
+                    <td>1.27月</td>
+                    <td class="Holiday">1.28火(旧暦大晦日)</td>
+                    <td class="Holiday">1.29水(旧暦新年)</td>
+                    <td>1.30木</td>
+                    <td>1.31金</td>
+                    <td>2.1土</td>
+                </tr>
+                <tr>
+                    <th>在学時間</th>
+                    <td>13:30-19:30</td>
+                    <td>13:00-17:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>研究室・学校事務</th>
+                    <td><p>実験参加（木全先輩）</p></td>
+                    <td></td>
+                    <td><p>10:30-12:00</p><p>パターン認識特論III</p></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>研究・数理</th>
+                    <td><p>・個人日程進捗報告サイト作り</p></td>
+                    <td><p>・個人日程進捗報告サイト作り</p><p>・論文よみ/整理</p></td>
+                    <td><p></p></td>
+                    <td><p></p></td>
+                    <td><p></p></td>
+                    <td><p>パターンIII課題（論文よみ・研究まとめ）</p></td>
+                    <td><p>パターンIII課題（小論文・提出）</p></td>
+                </tr>
+                <tr>
+                    <th>語学</th>
+                    <td></td>
+                    <td>英単語IELTS</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>その他の行程</th>
+                    <td></td>
+                    <td><p>11:00-12:00</p><p>編鍾構造原理研究会</p></td>
+                    <td><p>13:30-16:30</p><p>名古屋-🚍-大阪梅田</p><p>20:30-23:30</p><P>大阪関西-✈-上海浦東</p></td>
+                    <td><p>9:00-20:00</p><p>上海虹橋-🚅-昆明</p></td>
+                    <td><p>正月休み</p></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="25.2.2-25.3.22">
+        <div class="Hlight">
+            <h2>25.2.2-25.3.22 春休み期間</h2>
+        </div>
+    </div>
+    <div class="25.3.23-25.3.29">
+        <div class="Hlight">
+            <h2>25.3.23-25.3.29</h2>
+        </div>
+        
+        <div>
+            <table>
+                <tr>
+                    <th>日付</th>
+                    <td>3.23日</td>
+                    <td>3.24月</td>
+                    <td>3.25火</td>
+                    <td>3.26水</td>
+                    <td>3.27木</td>
+                    <td>3.28金</td>
+                    <td>3.29土</td>
+                </tr>
+                <tr>
+                    <th>在学時間</th>
+                    <td></td>
+                    <td>10:00-18:00</td>
+                    <td>13:00-19:00</td>
+                    <td>8:00-19:00</td>
+                    <td>8:00-16:40</td>
+                    <td>12:00-18:00</td>
+                    <td>12:30-15:30</td>
+                </tr>
+                <tr>
+                    <th>研究室・学校事務</th>
+                    <td></td>
+                    <td><p>13:00-15:00</p><p>大掃除</p></td>
+                    <td></td>
+                    <td><p>13:30-14:00</p><p>授業料免除申請</p><p>17:00-19:00</p><p>謝恩会</p></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>研究・数理</th>
+                    <td><p></p></td>
+                    <td><p>【実験データ処理】：データ整理、評点足し算、累積分布計算、</p><p>学会参加検討</p></td>
+                    <td><p>【実験データ処理】：評価中心値計算、閾値計算</p><p>【ネット塾】：人工知能応用</p></td>
+                    <td><p>【実験データ処理】：評価中心値計算、閾値データプロット、修正</p><p>【ネット塾】：人工知能応用</p></td>
+                    <td><p>【実験データ処理】：MDS方法検討、経典MDSで音色空間草稿作り</p><p>【ネット塾】：人工知能応用</p></td>
+                    <td><p>個別MT·自己紹介ppt準備</p><p>【ネット塾】：人工知能応用</p></td>
+                    <td><p>個別MT·自己紹介ppt準備</p><p>【ネット塾】：人工知能応用</p></td>
+                </tr>
+                <tr>
+                    <th>語学</th>
+                    <td></td>
+                    <td><p>英単語IELTS</p></td>
+                    <td><p>英単語IELTS</p></td>
+                    <td><p>英単語IELTS</p></td>
+                    <td><p>英単語IELTS</p></td>
+                    <td><p>英単語IELTS</p></td>
+                    <td><p>英単語IELTS</p></td>
+                </tr>
+                <tr>
+                    <th>その他の行程</th>
+                    <td>休み</td>
+                    <td></td>
+                    <td><p>12:00-13:00</p><p>区役所：非課税証明、住民票</p></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="25.3.30-25.4.5">
+        <div class="Hlight">
+            <h2>25.3.30-25.4.5</h2>
+        </div>
+        
+        <div>
+            <table>
+                <tr>
+                    <th>日付</th>
+                    <td>3.30日</td>
+                    <td>3.31月</td>
+                    <td>4.1火</td>
+                    <td>4.2水</td>
+                    <td>4.3木</td>
+                    <td>4.4金</td>
+                    <td>4.5土</td>
+                </tr>
+                <tr>
+                    <th>在学時間</th>
+                    <td></td>
+                    <td><p>12:30-16:00</p><p>18:00-20:00</p></td>
+                    <td>8:00-17:30</td>
+                    <td>8:00-16:30</td>
+                    <td><p>8:00-11:00</p><p>13:00-20:00</p></td>
+                    <td><p>8:00-11:00</p><p>13:00-16:00</p></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>研究室・学校事務</th>
+                    <td></td>
+                    <td></td>
+                    <td><p>9:00-15:00</p><p>新歓会</p></td>
+                    <td><p>11:00-12:00</p><p>個別ミーティング</p></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>研究・数理</th>
+                    <td><p></p></td>
+                    <td><p>個別MT(4.2水)準備</p><p>【ネット塾】：人工知能応用</p></td>
+                    <td><p>個別MT(4.2水)準備</p><p>【データ処理】：座標値と尺度値の対応関係を計算</p><p>【ネット塾】：人工知能応用</p></td>
+                    <td><p>個別MT(4.2水)準備</p><p>学会検討</p><p>【ネット塾】：人工知能応用</p></td>
+                    <td><p>個別MT(4.7月)準備</p><p>論文よみ・整理</p><p>【ネット塾】：人工知能応用</p><p>系列範疇法の原理を整理</p></td>
+                    <td><p>個別MT(4.7月)準備</p><p>系列範疇法の原理を整理</p><p>論文よみ・整理</p><p>【ネット塾】：人工知能応用</p></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>語学</th>
+                    <td></td>
+                    <td><p>英単語IELTS</p></td>
+                    <td><p>英単語IELTS</p></td>
+                    <td><p>英単語IELTS</p></td>
+                    <td><p>英単語IELTS</p></td>
+                    <td><p>英単語IELTS</p></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>その他の行程</th>
+                    <td>休み</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>休み</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="25.4.6-25.4.12">
+        <div class="Hlight">
+            <h2>25.4.6-25.4.12</h2>
+        </div>
+        
+        <div>
+            <table>
+                <tr>
+                    <th>日付</th>
+                    <td>4.6日</td>
+                    <td>4.7月</td>
+                    <td>4.8火</td>
+                    <td>4.9水</td>
+                    <td>4.10木</td>
+                    <td>4.11金</td>
+                    <td>4.12土</td>
+                </tr>
+                <tr>
+                    <th>在学時間</th>
+                    <td>18:00-20:00</td>
+                    <td><p></p></td>
+                    <td></td>
+                    <td></td>
+                    <td><p></p></td>
+                    <td><p></p></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>研究室・学校事務</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>研究・数理</th>
+                    <td><p>個別MT(4.7月)準備</p><p>【ネット塾】：人工知能応用</p></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>語学</th>
+                    <td><p>英単語IELTS</p></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>その他の行程</th>
+                    <td>休み</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>休み</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
