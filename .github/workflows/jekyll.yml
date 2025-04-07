@@ -1,0 +1,20 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'  # 必须 ≤ 3.1（GitHub Pages 目前不支持 Ruby 3.2+）
+          bundler-cache: true  # 自动安装 Gemfile 中的依赖
+      - run: bundle exec jekyll build
